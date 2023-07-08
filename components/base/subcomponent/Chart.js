@@ -63,6 +63,7 @@ const Chart = ({chartData, themeColor}) => {
             />}
         </View>
 
+        {/*Toggle between monthly and daily chart */}
         <View style={styles.mode}>
                 <View style={{borderTopLeftRadius:20, borderTopRightRadius:0, borderBottomRightRadius:0, borderBottomLeftRadius:20,  width:"50%", backgroundColor: period==="daily"?themeColor:"#fff", borderColor:themeColor, borderWidth:2}}>
                     <TouchableOpacity onPress={()=> setPeriod("daily")}>
